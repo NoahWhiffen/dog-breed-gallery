@@ -1,3 +1,4 @@
+
 body {
     margin: auto;
     display: flex;
@@ -5,23 +6,20 @@ body {
     justify-content: flex-start;
     align-items: center;
     text-align: center;
-    height: 100vh;
+    height: 100%;
+    background-color: #FFC067;
 }
 
-.wrapper {
+header {
+    background-color: #7ca5ce;
     width: 100%;
-    max-width: 1200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
 .breed-selector {
+    font-size: 1em;
     display: flex;
-    padding: 15px;
-    font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin-bottom: 25px;
@@ -29,32 +27,58 @@ body {
     justify-content: center;
     width: 100%;
     flex-grow: 1; /* Allow breed-selector to take up the available space above */
+    background-color: #7ca5ce;
 }
+
+.wrapper {
+    font-size: 1.5em;
+    width: 100%;
+    max-width: 1800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    background-color: #333333;
+}
+
+
 
 label{
     margin: 15px;
     width: 50%;
+    padding: 0px 15px;
+}
+
+select, input {
+    width: 200px;
+    height: 30px;
+    font-size: 1rem;
 }
 
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    max-width: 90%;
+    max-width: 100%;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    color: white;
+    
 }
 
 .fetch-button {
     background-color: #f40000;
     border-radius: 50px;
     margin: 15px;
-    width: 250px;
-    height: 50px;
+    width: 300px;
+    height: 75px;
     font-weight: bold;
     align-self: center;
+    text-align: center;
     margin-top: 20px;
     top: 40px; /*  This is to move the button down */
+    border: 1px solid black;
 }
 
 img {

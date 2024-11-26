@@ -22,7 +22,9 @@ function App() {
 
   return (
     <div className="wrapper">
-      <h1>Dog Image Gallery</h1>
+      <header>
+        <h1>Dog Image Gallery</h1>
+      </header>
       <BreedSelector
         setBreed={setBreed}
         setNumImages={setNumImages}
