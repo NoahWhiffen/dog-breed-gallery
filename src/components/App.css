@@ -1,0 +1,73 @@
+body {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.breed-selector {
+    display: flex;
+    padding: 15px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 25px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-grow: 1; /* Allow breed-selector to take up the available space above */
+}
+
+label{
+    margin: 15px;
+    width: 50%;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.fetch-button {
+    background-color: #f40000;
+    border-radius: 50px;
+    margin: 15px;
+    width: 250px;
+    height: 50px;
+    font-weight: bold;
+    align-self: center;
+    margin-top: 20px;
+    top: 40px; /*  This is to move the button down */
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 8px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover; /* Ensure images maintain their aspect ratio without distortion */
+}
+
+img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 8px 24px rgba(0, 0, 0, 0.2);
+}
