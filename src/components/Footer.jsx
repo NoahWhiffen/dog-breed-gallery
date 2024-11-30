@@ -9,7 +9,7 @@ function Footer() {
             I really hope you enjoy my project &#9786;
         </p>
     </footer>
-    )  
+    );  
 }
 
 export default Footer;
