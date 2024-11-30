@@ -1,12 +1,13 @@
 //          QAP3
 // Title: Dog Image Generator
 // Author: Noah Whiffen - SD12
-// Dates:  November 22nd, 2024 - 
+// Dates:  November 22nd, 2024 - November 29th, 2024
 
 import BreedSelector from './BreedSelector';
 import ImageGallery from './ImageGallery';
 import './App.css';
 import { useState } from 'react';
+import Footer from './Footer'
 
 function App() {
   const [breed, setBreed] = useState('');
@@ -33,7 +34,9 @@ function App() {
         fetchImages={fetchImages}
         />
       <ImageGallery images={images} />
+      <Footer/>
     </div>
+
   );
 }
 
